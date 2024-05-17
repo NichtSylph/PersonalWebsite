@@ -1,0 +1,227 @@
+.homepage {
+    padding: 60px 20px;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    text-align: center;
+    background-color: #333333;
+    margin-top: 125px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    gap: 300px;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-section {
+    text-align: left;
+    flex: 1;
+}
+
+.left-section h1 {
+    font-size: 32px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.left-section h2 {
+    font-size: 32px;
+    margin: 5px 0 0 0;
+}
+
+.divider {
+    width: 375px;
+    height: 10px;
+    background-color: #d9d9d9;
+    margin: 10px 0;
+}
+
+.divider.wide {
+    width: 575px;
+    height: 10px;
+    background-color: #d9d9d9;
+    margin: 13px 2px 0px auto;
+    z-index: 1;
+}
+
+.profile-picture {
+    width: 450px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.right-section {
+    text-align: left;
+    max-width: 600px;
+    flex: 1;
+}
+
+.quote-container {
+    position: relative;
+}
+
+.quotes-icon {
+    width: 600px;
+    height: 550px;
+    position: relative;
+    margin-left: -15px;
+}
+
+blockquote {
+    font-size: 35px;
+    font-style: italic;
+    position: absolute;
+    top: 44%;
+    left: 42.5%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: center;
+}
+
+.about-me-section {
+    background-color: #333333;
+    text-align: center;
+    width: 575px;
+    margin: -12px auto 0 auto;
+}
+
+.about-me-section h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-me-section p {
+    font-size: 18px;
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .left-section {
+        margin-right: 0;
+    }
+
+    .right-section {
+        margin-top: -5px;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .left-section h1,
+    .left-section h2 {
+        font-size: 20px;
+    }
+
+    .divider {
+        width: 200px;
+    }
+
+    .divider.wide {
+        width: 300px;
+    }
+
+    .quotes-icon {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    blockquote {
+        font-size: 18px;
+    }
+
+    .about-me-section {
+        margin: -10px auto 0 auto;
+    }
+
+    .about-me-section h3 {
+        font-size: 24px;
+    }
+
+    .about-me-section p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .homepage {
+        padding: 100px 40px;
+        margin-top: 150px;
+        padding-bottom: 750px;
+    }
+
+    .main-content {
+        padding: 0 40px;
+        max-width: 1600px;
+        margin: 0 auto 40px auto;
+        gap: 800px;
+    }
+
+    .left-section h1,
+    .left-section h2 {
+        font-size: 48px;
+    }
+
+    .divider {
+        width: 500px;
+        height: 15px;
+    }
+
+    .divider.wide {
+        width: 750px;
+        height: 15px;
+        margin: 40px 0 0 0;
+        z-index: 1;
+    }
+
+    .profile-picture {
+        width: 600px;
+    }
+
+    .quotes-icon {
+        width: 800px;
+        height: 700px;
+        margin-left: -20px;
+    }
+
+    blockquote {
+        font-size: 50px;
+    }
+
+    .about-me-section {
+        width: 750px;
+        margin: -12px auto 0 -70px;
+    }
+
+    .about-me-section h3 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .about-me-section p {
+        font-size: 24px;
+    }
+}

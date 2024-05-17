@@ -1,0 +1,108 @@
+.projects {
+    padding: 60px 20px;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    text-align: center;
+    background-color: #333333;
+}
+
+.projects-title {
+    margin-top: 150px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.projects-divider {
+    width: 18%;
+    max-width: 800px;
+    height: 10px;
+    background-color: #d9d9d9;
+    margin: 10px auto;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 50px 0 20px 0;
+}
+
+.project-image {
+    width: 425px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.project-link:hover {
+    color: #d9d9d9;
+}
+
+.projects-grid {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .project-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-link {
+        font-size: 16px;
+    }
+
+    .projects-divider {
+        width: 80%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .projects {
+        padding: 100px 40px;
+    }
+
+    .projects-title {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .projects-divider {
+        height: 15px;
+    }
+
+    .project-title {
+        font-size: 36px;
+    }
+
+    .project-image {
+        width: 600px;
+    }
+
+    .project-link {
+        font-size: 24px;
+    }
+}
